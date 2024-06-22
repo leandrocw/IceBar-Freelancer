@@ -11,12 +11,12 @@
   display: flex;
   align-items: center;
   margin-left: 30px;
-  width:150px;
+  width: 150px;
   height: 100px;
 }
 
 header {
-  background-color:#1D0E45;
+  background-color: #1d0e45;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,7 +27,7 @@ nav {
   align-items: center;
 }
 header a {
-  color:#ffff;
+  color: #ffff;
   font-weight: 600;
   font-size: 16px;
   display: flex;
@@ -39,15 +39,14 @@ header a {
 .navbar a {
   text-decoration: none;
 }
-.navbar  :hover {
+.navbar :hover {
   color: rgb(102, 95, 95);
 }
 .buttonTicket {
   padding: 20px 40px 20px 40px;
-  background-color:#FFE600 ;
-  color: #0029FF;
+  background-color: #ffe600;
+  color: #0029ff;
   border-radius: 55px;
-  
 }
 
 .headset {
@@ -56,9 +55,7 @@ header a {
   top: 0;
   margin-top: 42px;
   margin-left: 100px;
-
 }
-
 
 .query {
   color: #1d0e45;
@@ -67,7 +64,7 @@ header a {
   font-weight: 900;
   font-size: 33px;
 }
-#ticketpurchases{
+#ticketpurchases {
   gap: 64px;
   padding: 64px 80px;
 }
@@ -94,7 +91,6 @@ header a {
   height: fit-content;
   opacity: 1;
   padding: 24px;
- 
 }
 .ticketpurchases .paragraph {
   width: 600px;
@@ -130,4 +126,26 @@ header a {
 }
 .ticketpurchases.some .paragraph {
   border-bottom: none;
+}
+
+footer {
+  background-color: #1d0e45;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.content {
+  display: flex;
+  gap: 150px;
+  margin: 70px 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ff0000;
+}
+.speedlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
