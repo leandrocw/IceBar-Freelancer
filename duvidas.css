@@ -131,21 +131,29 @@ header a {
 footer {
   background-color: #1d0e45;
   color: #ffff;
-  display: flex;
-  justify-content: center;
-  height: 400px;
+  display: block;
+  padding: 64px 80px;
 }
 .content {
   display: flex;
-  gap: 150px;
-  margin: 70px 0;
+  justify-content: space-between;
+  margin: auto 100px;
+  border-bottom: 1px dotted #ffffff;
 }
 footer a {
   text-decoration: none;
   color: #ff0000;
 }
 .speedlinks {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+}
+
+.copyright {
+  padding: 24px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
 }
