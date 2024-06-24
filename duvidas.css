@@ -105,8 +105,6 @@ header a {
   color: #535252;
   font-weight: 600;
   border-bottom: 1px solid #0029ff;
-  margin-top: -10px;
-  padding: 0 24px;
   opacity: 0;
   overflow: hidden;
   transition: 0.4s;
@@ -129,6 +127,8 @@ header a {
 }
 
 footer {
+  position: relative;
+
   background-color: #1d0e45;
   color: #ffff;
   display: block;
@@ -156,4 +156,13 @@ footer a {
   color: #ffffff;
   font-size: 15px;
   font-weight: 500;
+}
+.backgroundImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -10;
+  width: 100%;
+  height: auto;
 }
