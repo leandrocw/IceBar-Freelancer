@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --main-color:#1C4C96 ;
-    --secondy-color:#5D71DB;
+  --main-color: #1c4c96;
+  --secondy-color: #5d71db;
 }
 * {
   box-sizing: border-box;
@@ -44,7 +44,7 @@ header a {
   text-decoration: none;
 }
 .navbar :hover {
-  color: rgb(102, 95, 95);
+  color: rgb(139, 112, 233);
 }
 .buttonTicket {
   padding: 20px 40px 20px 40px;
@@ -69,59 +69,62 @@ header a {
 }
 
 .head {
-    text-align: center;
-    color: #ffff;
-    margin-top: 10rem;
+  text-align: center;
+  color: #ffff;
+  margin-top: 10rem;
 }
 .head h1 {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 55px;
 }
 .head p {
-    padding-top: 30px;
-    margin-left: 42rem;
-    font-weight: 600;
-    font-size: 20px;
-    width: 600px;
+  font-family: kabel LT Std, sans-serif;
+  padding-top: 30px;
+  margin-left: 42rem;
+  font-weight: 600;
+  font-size: 20px;
+  width: 600px;
 }
 
 .background-video-attractions {
-   
-    height: 35rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 80px 50px 100px;
-  }
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 80px 50px 100px;
+}
 #attractions {
-    background-color: var(--main-color);
-    position: relative;
-    top: 300px;
-    overflow: hidden;
-  }
-  
+  background-color: var(--main-color);
+  position: relative;
+  top: 300px;
+  overflow: hidden;
+}
+
 .attractions-right {
-    display: flex;
-    overflow: hidden;
-    color: #ffff;
-    margin-top: 60px;
-  }
-  
+  overflow: hidden;
+  color: #ffff;
+}
+
 .content-right h2 {
-    font-family: Merriweather;
-    color: #ffff;
-    font-weight: 600;
-    font-size: 80px;
-  }
-  
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 52rem;
+  margin-left: 45rem;
+  font-family: Merriweather;
+  color: #ffff;
+  font-weight: 600;
+  font-size: 80px;
+}
+
 .paragraph-right {
-    font-family: kabel LT Std, sans-serif;
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    color: #ffff;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 30px;
-  }
+  font-family: kabel LT Std, sans-serif;
+  width: 800px;
+  color: #ffff;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  position: relative;
+  bottom: 27rem;
+  margin-left: 45rem;
+}

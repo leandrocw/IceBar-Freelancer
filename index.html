@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/indexResponsivo.css">
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="Website icon" type="png" href="littlelogo.png">
+    <link rel="Website icon" type="png" href="littlelogo.png" />
     <title>Icebar Monte verde - MG</title>
   </head>
   <body>
@@ -24,7 +28,8 @@
         <a href="#">Ìnicio</a>
         <a href="duvidas.html">perguntas frequentes</a>
         <a href="sobre.html">Sobre</a>
-        <a href="#">Contato
+        <a href="#"
+          >Contato
           <svg
             class="headset"
             xmlns="http://www.w3.org/2000/svg"
@@ -72,12 +77,12 @@
             <span class="tickets"> Ingressos </span>
           </a>
         </div>
-     
       </nav>
     </header>
     <main>
       <section id="sectionMain">
         <div class="conteiner">
+          <!-- neve -->
           <div class="snoww">
             <span style="--i: 20"></span>
             <span style="--i: 28"></span>
@@ -136,14 +141,22 @@
           </div>
         </div>
         <div class="bearmain">
-          <img
-            class="ursoMain"
-            src="src/img/BearMain.png"
-            alt="Urso Main"
-          />
+          <picture>
+            <source
+              media="(max-width: 800px)"
+              srcset="src/img/ursoresponsivo.png"
+            />
+            <img class="ursoMain" src="src/img/BearMain.png" alt="Urso Main" />
+          </picture>
         </div>
         <div class="IcebarSection">
-          <img class="Icebar" src="src/img/logotipoIcebar.png" alt="" />
+          <picture>
+            <source
+              media="(max-width: 700px)"
+              srcset="src/img/logopeqn.png"
+            />
+            <img class="Icebar" src="src/img/logotipoIcebar.png" alt="" />
+          </picture>
         </div>
         <div class="paragraph">
           <p>
@@ -158,53 +171,71 @@
             Vem curtir essa aventura congelante!
           </p>
         </div>
-         <!-- carrossel -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicadores de imagem -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      
-      <!-- Slides de imagens -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="src/img/Untitled.png" alt="Imagem 1">
-          <p>Experiência Ártica 
-            <br>
-            em Plena Serra!</p>
-        </div>
-        <div class="carousel-item">
-          <img src="src/img/Untitled.png" alt="Imagem 2">
-          <p>Crie memórias
-            inesquecíveis
-            <br>
-            em família.</p>
-        </div>
-        <div class="carousel-item">
-          <img src="src/img/Untitled.png" alt="Imagem 3">
-          <p>Diversão Congelante
-            <br>
-            te Espera!
+        <!-- carrossel -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicadores de imagem -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
 
-          </p>
+          <!-- Slides de imagens -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="src/img/Untitled.png" alt="Imagem 1" />
+              <p>
+                Experiência Ártica
+                <br />
+                em Plena Serra!
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="src/img/Untitled.png" alt="Imagem 2" />
+              <p>
+                Crie memórias inesquecíveis
+                <br />
+                em família.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="src/img/Untitled.png" alt="Imagem 3" />
+              <p>
+                Diversão Congelante
+                <br />
+                te Espera!
+              </p>
+            </div>
+          </div>
+
+          <!-- Controles do carrossel -->
+          <a
+            class="carousel-control-prev"
+            href="#myCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#myCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
         </div>
-      </div>
-      
-      <!-- Controles do carrossel -->
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Próximo</span>
-      </a>
-    </div>
+      </section>
+      <section class="SectionTickets">
+        <div class="TicketsImg">
+          <img src="src/img/img/section-tickects.png" alt="" />
+        </div>
       </section>
     </main>
     <script src="index.js"></script>
